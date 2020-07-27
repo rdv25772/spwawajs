@@ -1,6 +1,7 @@
 <ol class="foundItems">
   <li ng-repeat="item in found.foundItems">
-    {{ item.name }}
+    {{ item.name }} <br/>
+    {{ item.description}} <br/>
     <button ng-click="found.onRemove({index: $index});">Don't want this one!</button>
   </li>
 </ol>
