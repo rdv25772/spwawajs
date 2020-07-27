@@ -1,8 +1,8 @@
 <ol class="foundItems">
-  <li ng-repeat="item in found.foundItems">
-    {{ item.name }} <br/>
-    {{ item.description}} <br/>
-    <button ng-click="found.onRemove({index: $index});">Don't want this one!</button>
+  <li class="item" ng-repeat="item in found.foundItems">
+    <button class="rem_item" ng-click="found.onRemove({index: $index});">Don't want this one!</button>
+    <div class="name">{{ item.name }}  <span class="short_name">({{item.short_name}})</span></div>
+    <div class="description">{{ item.description}} </div>
   </li>
 </ol>
 <div class="nothing" ng-show="!found.foundItemsFilled();">{{ found.message }}</div>

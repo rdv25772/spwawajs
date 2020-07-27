@@ -52,7 +52,7 @@ function MenuSearchService($http, $q, ApiBasePath) {
       var menu_items = result.data.menu_items;
       for (var i = 0; i < menu_items.length; i++) {
         var item = menu_items[i];
-        if (item.name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
+        if (item.description.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
           foundItems.push(item);
         }
       }

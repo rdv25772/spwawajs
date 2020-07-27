@@ -58,3 +58,17 @@ input[type="text"] {
   float: left;
   clear: both;
 }
+
+.rem_item {
+ float: right;
+}
+
+.name{
+  font-size: 1.2em;
+}
+.short_name {
+  font-size: 1em;
+}
+.description {
+  font-style: italic;
+}
