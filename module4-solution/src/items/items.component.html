@@ -1,0 +1,11 @@
+<ul id="items-list" class="list-group">
+  <li class="list-group-item" ng-repeat="item in $ctrl.items">
+    <div class="item-nm">{{ item.name }} </div><div class="item-sn"> ({{ item.short_name }})</div>
+    <div class="price">
+      <div><span class="item-spn" ng-if="item.small_portion_name" >{{ item.small_portion_name }} : </span><span class="item-prs">{{ item.price_small | currency }}</span></div>
+      <div><span class="item-lpn" ng-if="item.large_portion_name" >{{ item.large_portion_name }} : </span><span class="item-prl">{{ item.price_large | currency }}</span></div>
+    </div>
+    <div class='clearfix'></div>
+    <div class="item-des">{{ item.description }}</div>
+  </li>
+</ul>

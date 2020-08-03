@@ -1,0 +1,6 @@
+<div class="men-cat">Menu Category: {{ itemsCtrl.categoryName }}</div>
+<loading-spinner ng-if="itemsCtrl.loading"></loading-spinner>
+<div class="spec_instr" ng-if="itemsCtrl.spec_instr">
+  {{ itemsCtrl.spec_instr }}
+</div>
+<items items="itemsCtrl.items"></items>

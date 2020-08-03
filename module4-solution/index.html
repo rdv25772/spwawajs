@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app='MenuApp'>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Welcome to our Restaurant</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav class="nav justify-content-end">
+          <ul class="nav nav-pills justify-content-end">
+            <li ui-sref-active="active" ui-sref="home" class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li ui-sref-active="active" ui-sref="categories" role="presentation"><a href="#" class="nav-link">Categories</a></li>
+          </ul>
+        </nav>
+        <h3>Welcome to our restaurant!</h3>
+      </div>
+      <ui-view></ui-view>
+    </div>
+    <!-- Libraries -->
+    <script src="lib/jquery-3.5.1.min.js" ></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuapp/menuapp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+    <script src="src/spinner/loadingspinner.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'data' module data -->
+    <script src="src/data/data.constants.js"></script>
+    <script src="src/data/menudata.service.js"></script>
+
+    <!-- 'MenuApp' module artifacts -->
+    <script src="src/categories/categories.component.js"></script>
+    <script src="src/categories/categories.controller.js"></script>
+    <script src="src/items/items.component.js"></script>
+    <script src="src/items/items.controller.js"></script>
+
+    <!-- 'spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
+
+  </body>
+</html>

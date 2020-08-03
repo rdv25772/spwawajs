@@ -1,0 +1,66 @@
+h3 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+button {
+  margin: 5px;
+}
+
+categories > div > button.btn {
+  color: #fff;
+  background-color: mediumslateblue;
+  border-color: #28a745;
+}
+categories > div > button.btn:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.men-cat {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.spec_instr {
+  font-style: italic;
+  margin: 5px;
+  margin-bottom: 15px;
+  border-top: red 1px solid;
+  border-bottom: red 1px solid;
+  padding: 10px;
+}
+.item-nm {
+  font-weight: bold;
+  float: left;
+}
+.item-sn {
+  float: left;
+  font-weight: bolder;
+  margin: 0px 10px;
+}
+.price {
+  float: right;
+  border-color: red 1px solid;
+}
+.item-spn {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.item-prs {
+  float: right;
+}
+.item-lpn {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.item-prl {
+  float: right;
+}
+.item-des {
+  font-style: italic;
+  clear: both;
+}
